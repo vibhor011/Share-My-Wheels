@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Car Detail</title>
+ <style>
+ /* Set global styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: black;
+      background-color: #f5f5f5;
+      background-image: url("img5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;  /*Optional: Adjust the background size as desired */
+    }
+
+/* Set styles for headings */
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Set styles for links */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Set styles for form elements */
+input[type="text"],
+input[type="text"],
+input[type="text"],
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #fe5b3f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* Set styles for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Set styles for container element */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  h3{
+    color: black;
+    /*background-color: #333;*/
+  }
+}
+  </style>
+</head>
+<body>
+  <h1>Enter New Car Detail</h1>
+  <form action="SaveServlet" method="Post">
+    <table>
+      <tr><th>Car Name:</th><td><input type="text" name="carName"/></td></tr>
+      <tr><th>location:</th><td><input type="text" name="location"/></td></tr>
+      <tr><th>car Description</th><td><input type="text" name="carDescription"/></td></tr>
+      <tr>
+        <th>car Type:</th>
+        <td>
+          <select name="carType">
+            <option>Petrol</option>
+            <option>Diesel</option>
+            <option>LPG</option>
+            <option>Electric</option>
+            <option>Other</option>
+          </select>
+        </td>
+      </tr>
+       <tr><th>Price</th><td><input type="text" name="price"/></td></tr>
+      <tr><th>colour</th><td><input type="text" name="colour"/></td></tr>
+      <tr><th>year</th><td><input type="text" name="year"/></td></tr>
+      <tr><td colspan="2"><input type="submit" value="saveCar"/></td></tr>
+    </table>
+  </form>
+  <br/>
+  <h3><a href="ViewServlet">View Cars Detail</a></h3>
+</body>
+</html>

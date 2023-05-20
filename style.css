@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family-Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+body{
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: #fe5b3f;
+    color: #fff;
+}
+section{
+    padding: 50px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fffbfb;
+    padding: 15px 100px;
+}
+.logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5rem;
+}
+.book{
+    padding: 10px 20px;
+    background-color: #fe5b3f;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 5rem;
+}
+.book:hover{
+    transform: scale(1.1);
+}
+.sign{
+    padding: 10px 20px;
+    background-color: #1a8917;
+    font-weight: 500;
+    color: #32de84;
+    border-radius: 5rem;
+}
+.sign:hover{
+    transform: scale(1.1);}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #fffbfb;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+.text h1{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-family: 'Roboto',sans-serif;
+}
+.text p{
+    margin: 5rem 0 1rem;
+}
+.store img{
+    width: 150px;
+    cursor: pointer;
+    width: 300px; /* Set the width */
+    height: 300px; /* Set the height */
+  }
+.image img{
+    width:600px;
+    height: 100;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+p{
+    font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+main {
+  padding: 20px;
+}
+
+.car-option {
+  margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.description {
+  margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.price {
+  font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.btn-rent {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.service-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-option img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.service-option h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-option p.description {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.service-option .btn-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.service-option .btn-more:hover {
+  background-color: #555;
+}
+.signup-footer{
+    color: #fff;
+    background-color: #333;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.image{
+    margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+}
+ 
