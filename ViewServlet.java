@@ -97,7 +97,7 @@ public class ViewServlet extends HttpServlet {
 "  padding: 20px;\n" +
 "}\n" +
 "</style>");
-            out.println("<a href='index.html'>Add New Car Detail</a>");
+            out.println("<a href='index1.html'>Add New Car Detail</a>");
             out.println("<h1>Car List</h1>");
             
             List<Emp> list=EmpDao.getAllEmployees();
