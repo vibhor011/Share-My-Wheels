@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="index1.html" class ="logo"> Share Wheels!</a>
+        <ui class="navbar">
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="car.html">Cars</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+            <li><a href="sign up.html" class="sign">Sign up</a></li>
+            <li><a href=""></a></li>
+            <li><a href="sign in.html" class="sign">Sign in</a></li>
+            
+     
+        </ui>
+        <a href="index1.html" class="book">Add Car For Rent</a>
+    </header>
+    <section class="home">
+        <div class="text">
+            <h1>Welcome to Share Wheels!</h1><br><br>
+<h2><strong>Join our community of car owners</strong></h2>
+            <div class="store">
+                <img src="img2.jpg" alt="">
+            </div>
+       
+        <span id="element"></span> 
+        </div>           
+        <div class="image">
+        <img src="homeimg.png" alt="">
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <style>
+        #element {
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            white-space: nowrap; /* Ensures the text doesn't wrap */
+             position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            
+        }
+    </style>
+    <script>
+    var typed = new Typed('#element', {
+        strings: ['<strong> Welcome to Share Wheels!</strong>','<i><strong>Earn Money</strong></i> ONLINE',' <strong>Hustel Free! </strong>Easy Rental', '<strong>Use Car! To earn Money</strong>', '<strong>Easily  Host Car</strong>'],
+      typeSpeed: 50,
+      loop: true, // Makes the text continuously repeat
+      backDelay: 2000, 
+    });
+  </script>
+</body>
+</html>
