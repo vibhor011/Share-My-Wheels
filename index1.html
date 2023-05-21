@@ -92,16 +92,17 @@ th {
   </style>
 </head>
 <body>
-  <h1>Enter New Car Detail</h1>
+    <h1><strong>Enter New Car Detail</strong></h1>
   <form action="SaveServlet" method="Post">
     <table>
-      <tr><th>Car Name:</th><td><input type="text" name="carName"/></td></tr>
-      <tr><th>location:</th><td><input type="text" name="location"/></td></tr>
-      <tr><th>car Description</th><td><input type="text" name="carDescription"/></td></tr>
+        <tr><th>Car Name:</th><td><input type="text" name="carName" required /></td></tr>
+        <tr><th>Location:</th><td><input type="text" name="location" required /></td></tr>
+      <tr><th>Car Description</th><td><input type="text" name="carDescription"/></td></tr>
       <tr>
-        <th>car Type:</th>
+        <th>Car Type:</th>
         <td>
-          <select name="carType">
+            <select name="carType" required>
+            <option value="">Select Car Type</option>
             <option>Petrol</option>
             <option>Diesel</option>
             <option>LPG</option>
@@ -111,12 +112,13 @@ th {
         </td>
       </tr>
        <tr><th>Price</th><td><input type="text" name="price"/></td></tr>
-      <tr><th>colour</th><td><input type="text" name="colour"/></td></tr>
-      <tr><th>year</th><td><input type="text" name="year"/></td></tr>
+      <tr><th>Colour</th><td><input type="text" name="colour"/></td></tr>
+      <tr><th>Year</th><td><input type="text" name="year"/></td></tr>
       <tr><td colspan="2"><input type="submit" value="saveCar"/></td></tr>
     </table>
   </form>
   <br/>
-  <h3><a href="ViewServlet">View Cars Detail</a></h3>
+  <h3><a href="ViewServlet"><strong>View Cars Detail</strong></a></h3>
 </body>
 </html>
+
