@@ -176,7 +176,28 @@
         transform: translateY(0);
     }
 }
-
+ /* Add responsive styles here */
+        @media only screen and (max-width: 768px) {
+            /* Styles for screens smaller than 768px */
+            /* Adjust as needed */
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar li {
+                margin-bottom: 10px;
+            }
+            .sign {
+                display: block;
+                margin-top: 10px;
+                text-align: center;
+            }
+            .book {
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
     </style>
     <script>
     var typed = new Typed('#element', {
