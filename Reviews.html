@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Rental System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+        /* Navbar styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Reviews section styles */
+.reviews {
+  text-align: center;
+  padding: 50px;
+}
+
+.review-card {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.review-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+
+  <section class="reviews">
+    <h1>Customer Reviews</h1>
+    <div class="review-card">
+      <img src="user1.png" alt="User 1">
+      <h2>Rohit Sharma</h2>
+      <p><strong>"I had a great experience using this car rental system. It was easy to register my car for rent, and I started earning extra money right away. The platform was user-friendly, and the support team was always helpful. Highly recommended!"</strong> </p>
+    </div>
+    <div class="review-card">
+      <img src="user2.png" alt="User 2">
+      <h2>Ms Dhoni</h2>
+      <p><strong>"I've been using this car rental system for a few months now, and it's been fantastic. Not only am I able to make extra money by renting out my car when I don't need it, but the system also provides comprehensive insurance coverage </strong>"</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Share MY Wheels!. All rights reserved.</p>
+  </footer>
+    
+    <script>
+      // JavaScript code can be added here to handle any interactivity or dynamic behavior of the reviews section.
+// For example, you can fetch reviews data from an API and dynamically populate the review cards.
+
+// Dummy data for reviews
+const reviewsData = [
+  {
+    name: " <h2>Virat Kohli</h2>",
+    image: "user1.png",
+    review: "<strong>This car rental system has been a game-changer for me. As a car owner, I can now easily monetize my vehicle and cover some of the expenses The system allows me to manage my bookings effortlessly It's a win-win situation!</strong>"
+  },
+  {
+    name: "<h2>Hardik Pandya</h2>",
+    image: "user2.png",
+    review: "<strong>I can't say enough good things about this car rental system. It's intuitive, secure, and efficient. The website interface is modern and visually appealing, making it easy to navigate. </strong>"
+  }
+];
+
+// Populate review cards
+const reviewContainer = document.querySelector('.reviews');
+reviewsData.forEach(review => {
+  const card = document.createElement('div');
+  card.className = 'review-card';
+  card.innerHTML = `
+    <img src="${review.image}" alt="${review.name}">
+    <h3>${review.name}</h3>
+    <p>${review.review}</p>
+  `;
+  reviewContainer.appendChild(card);
+});
+
+    </script>
+</body>
+</html>
+
