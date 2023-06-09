@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="26HyxFOdrfz34jFncbx0Oz3BRu859R_KunGVEijDhus" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,21 +21,20 @@
             <li><a href="Blogs.html">Blogs</a></li>
             <li><a href="contact us.html">Contact</a></li>
             <li><a href="sign up.html" class="sign">Sign up</a></li>
-<!--             <li><a href=""></a></li> -->
-            <li><a href="sign in.html" class="sign">Sign in</a></li>
+            <!--<li><a href=""></a></li>-->
+            <li><a href="sign in.jsp" class="sign">Sign in</a></li>
             
      
         </ui>
-        <a href="index1.html" class="book">Add Car Detail For Rent</a>
+        <a href="index1.html" class="book">Add Car Detail For Hosting</a>
     </header>
     <section class="home">
-        <div class="text">
+        <div class="text"><br><br>
             <h1>Welcome to Share Wheels!</h1><br><br>
-<h2><strong>Join our community of car owners</strong></h2>
-            <div class="store">
+            <h2><strong>Join our community of cars</strong></h2><br><br>
+<!--            <div class="store">
                 <img src="img2.jpg" alt="">
-            </div>
-       
+            </div>-->
         <span id="element"></span> 
         </div>           
         <div class="image">
@@ -124,10 +122,10 @@
 }
 
 /* Image Zoom Effect */
-.image img:hover {
+/*.image img:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
-}
+}*/
 
 /* Button Hover Effect */
 .book:hover {
@@ -199,6 +197,48 @@
                 text-align: center;
             }
         }
+        .form-container form{
+    display: flex;
+    flex-wrap: flex;
+    align-items: center;
+    gap:1rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 100px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.input-box{
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: column;
+}
+.input-box span {
+    font-weight: 500;
+}
+.input-box input{
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.form-container form .btn{
+    flex: 1 1 7rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background: #474fa0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.form-container form .btn:hover{
+    background: #ff4b2b;
+}
+
     </style>
     <script>
     var typed = new Typed('#element', {
@@ -238,8 +278,28 @@ train.onclick = function() {
 
   }, 20);
 };
-
+        function openRentCarPage() {
+            window.open("rent car.html", "_self");
+        }
+   
   </script>
+<div class="form-container">
+    <form action="rent car.html">
+        <div class="input-box">
+            <span>Location</span>
+            <input type="search" name="" id="" placeholder="Search Places">
+        </div>
+        <div class="input-box">
+            <span>Pick-Up Date</span>
+            <input type="date" name="" id="">
+        </div>
+        <div class="input-box">
+            <span>Return Date</span>
+            <input type="date" name="" id="">
+        </div>
+        <input type="submit" class="btn" value="Submit" onclick="openRentCarPage()">
 
+    </form>
+</div>
 </body>
 </html>
